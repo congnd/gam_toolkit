@@ -1,0 +1,43 @@
+{
+    "name": "GAM Toolkit",
+    "description": "An awesome tool!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "run_at": "document_start",
+            "include_globs": [
+                "https://admanager.google.com/*#inventory/ad_unit/detail/ad_unit_id=*"
+            ],
+            "matches": [
+                "https://admanager.google.com/*"
+            ],
+            "css": [],
+            "js": [
+                "content-script.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "script.js"
+            ],
+            "include_globs": [
+                "https://admanager.google.com/*#inventory/ad_unit/detail/ad_unit_id=*"
+            ],
+            "matches": [
+                "https://admanager.google.com/*"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "/images/gam_16.png",
+        "32": "/images/gam_32.png",
+        "48": "/images/gam_48.png",
+        "128": "/images/gam_128.png"
+    }
+}
