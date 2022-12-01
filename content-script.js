@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     waitForElmExist('#__interceptedData').then((e) => {
         waitForElmUpdate('#__interceptedData', (insertedNode) => {
             var data = JSON.parse(insertedNode.getAttribute("data"))
-            var currentAdUnitId = data.result['3589']['1303']
+            var currentAdUnitId = data.result['3589']['3328']
             var hierarchy = data.result['3589']['1918']
             hierarchy.shift()
             hierarchy = hierarchy.map( e => e['2198'])
