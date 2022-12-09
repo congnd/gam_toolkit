@@ -45,7 +45,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
             hierarchy.shift()
             hierarchy = hierarchy.map( e => e['2198'])
             hierarchy.push(currentAdUnitId)
-            var fullId = '/' + hierarchy.join('/')
+            var accId = window.location.pathname.split("/").pop()
+            var fullId = `/${accId}/${hierarchy.join('/')}`
             
             let node = document.createElement("button");
             node.innerHTML = fullId
