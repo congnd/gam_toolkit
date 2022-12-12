@@ -20,7 +20,9 @@ var XHR = XMLHttpRequest.prototype;
                 try {
                 var request = JSON.parse(body)
                 if ((request != null) && (request.method == 'getAdUnit')) {
-                    dataDOMElement.setAttribute("data", this.response);
+                    if (document.URL.includes(request.params['1226'])) {
+                        dataDOMElement.setAttribute("data", this.response);
+                    }
                 }               
                 } catch (error) {
                     console.log(error);
