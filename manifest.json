@@ -10,7 +10,7 @@
         {
             "run_at": "document_start",
             "include_globs": [
-                "https://admanager.google.com/*#inventory/ad_unit/detail/ad_unit_id=*"
+                "https://admanager.google.com/*#inventory/ad_unit/detail/*"
             ],
             "matches": [
                 "https://admanager.google.com/*"
@@ -27,7 +27,7 @@
                 "script.js"
             ],
             "include_globs": [
-                "https://admanager.google.com/*#inventory/ad_unit/detail/ad_unit_id=*"
+                "https://admanager.google.com/*#inventory/ad_unit/detail/*"
             ],
             "matches": [
                 "https://admanager.google.com/*"
